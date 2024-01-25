@@ -15,7 +15,7 @@ function App() {
         </Route>
 
         <Route element={<RootLayout />}>
-          <Route index element={<Dashboard />}/>
+          <Route path="/" element={<Navigate to="/dashboard" />}/>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/upload" element={<Upload />} />
         </Route>
