@@ -1,5 +1,6 @@
 import notification from "../assets/notification.svg";
 import avatar from "../assets/avatar.png";
+import FileUploader from "../components/FileUploader";
 
 const Upload = () => {
   return (
@@ -18,7 +19,7 @@ const Upload = () => {
 
       {/* Main Area */}
       <div>
-        
+        <FileUploader />
       </div>
     </>
   );

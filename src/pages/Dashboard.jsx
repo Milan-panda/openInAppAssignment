@@ -6,7 +6,7 @@ const Dashboard = () => {
     <div className="w-full md:flex">
       <LeftSidebar />
 
-      <section className="flex flex-1 h-full bg-[#FAFAFB] px-10 pt-10">
+      <section className="flex flex-col overflow-y-auto min-h-screen flex-1 bg-[#FAFAFB] px-10 pt-10">
         <Outlet />
       </section>
     </div>
