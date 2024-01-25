@@ -37,7 +37,7 @@ const FileUploader = () => {
       const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
 
       // Add a new column name for the new column to be inserted
-      jsonData[0].splice(3, 0, "newColumn");
+      jsonData[0].splice(3, 0, "Select Tag");
 
       // Add a new property in each row of the new column with options for the select dropdown
       jsonData.slice(1).forEach((row) => {
