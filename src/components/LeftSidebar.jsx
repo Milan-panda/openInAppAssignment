@@ -7,7 +7,7 @@ const LeftSidebar = () => {
   const [activePage, setActivePage] = useState("Upload")
 
   return (
-    <nav className="hidden md:flex">
+    <nav className="hidden md:flex bg-white">
       <div>
         <div className="p-10 w-full flex justify-center">
           <Link to="/" className="flex gap-2 items-center">

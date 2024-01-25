@@ -10,7 +10,7 @@ const Upload = () => {
         <div>
           <h1 className="text-black text-[24px] font-bold leading-[32px]">Upload CV</h1>
         </div>
-        <div className="flex gap-4">
+        <div className="hidden md:flex gap-4">
           <img className="w-6" src={notification} alt="" />
 
           <img className="rounded-full" src={avatar} alt="" />

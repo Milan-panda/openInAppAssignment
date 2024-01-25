@@ -3,3 +3,15 @@
 body{
   font-family: 'Nunito', sans-serif;
 }
+.authLayout{
+  background: url("./assets/auth-background.png") no-repeat center;
+  width: 50vw;
+  background-size: cover;
+}
+
+@media screen and (max-width: 640px) {
+  .authLayout-OutletSection{
+    width: 100%;
+    flex-direction: column;
+  }
+}

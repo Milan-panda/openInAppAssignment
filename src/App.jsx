@@ -1,19 +1,22 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Upload from "./pages/Upload";
-import AuthPage from "./pages/AuthPage";
+import AuthLayout from "./Layouts/AuthLayout";
+import RootLayout from "./Layouts/RootLayout";
 
 function App() {
   return (
-    <main className="flex h-screen">
+    <main className="flex h-screen bg-[#F8FAFF] justify-center md:justify-normal">
       <Routes>
-        <Route element={<AuthPage />}>
+        <Route element={<AuthLayout />}>
           <Route path="/login" element={<Login />} />
         </Route>
 
-        <Route element={<Dashboard />}>
+        <Route element={<RootLayout />}>
+          <Route path="/" element={<Navigate to="/dashboard" />}/>
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/upload" element={<Upload />} />
         </Route>
       </Routes>
